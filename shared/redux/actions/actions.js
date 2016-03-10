@@ -93,3 +93,16 @@ export function deletePostRequest(post) {
     }).then(() => dispatch(deletePost(post)));
   };
 }
+
+export function pressNumber(number) {
+  return {
+    type: ActionTypes.PRESS_NUMBER,
+    number,
+  };
+}
+
+export function pressClear() {
+  return {
+    type: ActionTypes.PRESS_CLEAR,
+  };
+}
